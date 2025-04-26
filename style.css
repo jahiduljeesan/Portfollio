@@ -1,0 +1,163 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #f9d423, #ff4e50);
+  color: white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.header-buttons {
+  margin-top: 1rem;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  padding: 1px;
+  transition: 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* About */
+.about-section {
+  padding: 4rem 0;
+  background-color: white;
+  color: #333;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Projects */
+.projects-section {
+  padding: 4rem 0;
+  background: #f7f7f7;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card ul {
+  list-style: disc;
+  text-align: left;
+  padding-left: 20px;
+  margin: 1rem 0;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-images img {
+  width: 150px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-images img:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background-color: #222;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
