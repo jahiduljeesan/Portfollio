@@ -8,7 +8,7 @@
 /* Body */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, #a8edea, #fed6e3);
   color: #333;
 }
 
@@ -23,10 +23,11 @@ body {
 /* Header */
 header {
   padding: 3rem 0;
-  background: linear-gradient(135deg, #f9d423, #ff4e50);
-  color: white;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  color: #333;
 }
 
+/* Profile Picture */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -34,15 +35,17 @@ header {
   border-radius: 50%;
   border: 5px solid white;
   margin-bottom: 1rem;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Header Buttons */
 .header-buttons {
   margin-top: 1rem;
 }
 
+/* Buttons */
 .btn {
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  background: linear-gradient(45deg, #00c6ff, #0072ff); /* Fresh blue gradient */
   color: white;
   padding: 0.7rem 1.5rem;
   margin: 0.5rem;
@@ -51,12 +54,14 @@ header {
   text-decoration: none;
   transition: 0.3s;
   display: inline-block;
+  border: none;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
 }
+
 
 /* Social Links */
 .social-links {
@@ -101,7 +106,7 @@ header {
 /* Projects */
 .projects-section {
   padding: 4rem 0;
-  background: #f7f7f7;
+  background: #f0f8ff; /* light relaxing blue background */
 }
 
 .projects-section h2 {
@@ -156,7 +161,7 @@ header {
 /* Footer */
 footer {
   padding: 2rem 0;
-  background-color: #222;
+  background-color: #333;
   color: white;
   font-size: 0.9rem;
   margin-top: 2rem;
