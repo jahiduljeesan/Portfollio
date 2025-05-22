@@ -56,6 +56,7 @@
     <!-- Project 1 -->
     <div class="project-card">
       <h3>Proyash - Blood Donor Finder</h3>
+      <p><strong>Technology used:</strong>Java, Firebase, Material UI, Viewmodel, Push Notification, OneSignal</p>
       <ul>
         <li>Find blood donors easily by group and location</li>
         <li>Real-time updates using Firebase</li>
@@ -76,6 +77,30 @@
       </div>
     </div>
 
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Expense Buddy - Your Digital Wallet Tracker</h3>
+      <p><strong>Technology used:</strong> Java, Room, MVVM, Material UI, Pdf Converter Library</p>
+      <ul>
+        <li>Find blood donors easily by group and location</li>
+        <li>Real-time updates using Firebase</li>
+        <li>Emergency post features for urgent blood needs</li>
+        <li>Modern Material UI design</li>
+        <li>Push notifications enabled</li>
+      </ul>
+      <div class="project-images">
+        <img src="img/expense_tracker/expense_tracker1.jpg" alt="Screenshot 1">
+        <img src="img/expense_tracker/expense_tracker2.jpg" alt="Screenshot 2">
+        <img src="img/expense_tracker/expense_tracker3.jpg" alt="Screenshot 3">
+        <img src="img/expense_tracker/expense_tracker4.jpg" alt="Screenshot 4">
+        <img src="img/expense_tracker/expense_tracker5.jpg" alt="Screenshot 5">
+      </div>
+      <div class="buttons">
+        <a href="https://proyash20.tiiny.site/" class="btn">Download</a>
+        <a href="https://github.com/jahiduljeesan/Proyash" class="btn">Source Code</a>
+      </div>
+    </div>
+
     <!-- You can copy-paste this Project Card for more projects -->
 
   </div>
@@ -85,6 +110,36 @@
 <footer>
   <p>© 2025 Jahidul Islam. All rights reserved.</p>
 </footer>
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+<script>
+  // Get modal elements
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
+
+  // When any image inside .project-images is clicked
+  document.querySelectorAll('.project-images img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // When the close button is clicked
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  // Close modal on outside click
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
 
 </body>
 </html>
